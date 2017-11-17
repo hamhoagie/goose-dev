@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 # from flask.ext.sqlalchemy import SQLAlchemy
 import logging
 from logging import Formatter, FileHandler
-from forms import *
+#from forms import *
 import os
 
 #----------------------------------------------------------------------------#
@@ -43,33 +43,9 @@ def login_required(test):
 
 @app.route('/')
 def home():
-    return render_template('pages/placeholder.home.html')
+    return render_template('pages/home.html')
 
-
-@app.route('/about')
-def about():
-    return render_template('pages/placeholder.about.html')
-
-
-@app.route('/login')
-def login():
-    form = LoginForm(request.form)
-    return render_template('forms/login.html', form=form)
-
-
-@app.route('/register')
-def register():
-    form = RegisterForm(request.form)
-    return render_template('forms/register.html', form=form)
-
-
-@app.route('/forgot')
-def forgot():
-    form = ForgotForm(request.form)
-    return render_template('forms/forgot.html', form=form)
-
-# Error handlers.
-
+# Error handlers #
 
 @app.errorhandler(500)
 def internal_error(error):
