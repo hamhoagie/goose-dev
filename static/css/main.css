@@ -11,6 +11,9 @@
 html {
   overflow-y: scroll;
 }
+body {
+    background: #000;
+}
 a {
   cursor: pointer;
 }

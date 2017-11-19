@@ -25,6 +25,6 @@
 
 
      //navigator.mediaDevices.getUserMedia({ audio: true, video: false })
-        //.then(handleSuccess);
+        .then(handleSuccess);
 
 }).call(this);
