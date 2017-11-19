@@ -45,6 +45,16 @@ def login_required(test):
 def home():
     return render_template('pages/home.html')
 
+'''
+@app.route('/play')
+def play
+    return render_template('pages/play.html')
+
+@app.route('/beer')
+def beer
+    return render_template('pages/beer.html')
+'''
+
 # Error handlers #
 
 @app.errorhandler(500)
