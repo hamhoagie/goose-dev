@@ -1,11 +1,27 @@
 {% extends 'layouts/main.html' %}
+
+<script type="text/javascript">
+    function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+</script>
 {% block title %}GOOSE{% endblock %}
+
+
+
 {% block content %}
 
 <div class="row-center">
-<img class="img-responsive center-block"  src="../../static/img/GooseIsland_Caller_frame2_crop.png" alt="GOOD IDEAS" onclick="document.getElementById('goose').play();" />
+<img class="img-responsive center-block"  src="../../static/img/GooseIsland_Caller_frame2_crop.png" alt="GOOD IDEAS" onmousedown="PlaySound('goose');" onmouseup="StopSound('goose');" />
 
-<audio id="goose" src="../../static/audio/goose_short.mp3" preload="auto" hidden="true"></audio>
+<audio id="goose" src="../../static/audio/goose.mp3" preload="auto" hidden="true"></audio>
 <div>
 
 {% endblock %}
