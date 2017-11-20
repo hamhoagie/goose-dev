@@ -36,6 +36,14 @@ a {
  * Various other styles
  ****************************************************************************/
 
-#background_image {position: absolute}
+#background_image {
+    position: absolute
+}
+
+.blow-image {
+    positio: absolute;
+    margin-top: 50%;
+    z-index: 5;
+}
 
 /* Various other styles end */

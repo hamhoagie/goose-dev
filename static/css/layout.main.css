@@ -4,6 +4,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
   background: #000;
   /* The html and body elements cannot have any padding or margin. */
 }
@@ -13,15 +14,16 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
+  width: 100%;
   /* Negative indent footer by its height */
-  margin: 0 auto -60px;
+  margin: 0 0 -250px;
   /* Pad bottom by footer height */
-  padding: 0 0 60px;
+  padding: 0 0 0;
 }
 
 /* Set the fixed height of the footer here */
 #footer {
-  height: 60px;
+  height: 250px;
   background: #000;
 }
 
@@ -29,7 +31,7 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 
-
+/*
 #wrap > .container {
   padding: 60px 15px 0;
 }
@@ -45,3 +47,4 @@ body {
 code {
   font-size: 80%;
 }
+*/
