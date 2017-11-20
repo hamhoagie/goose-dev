@@ -16,14 +16,13 @@ body {
   height: 100%;
   width: 100%;
   /* Negative indent footer by its height */
-  margin: 0 0 -250px;
+  margin: 0 0 0;
   /* Pad bottom by footer height */
   padding: 0 0 0;
 }
 
 /* Set the fixed height of the footer here */
 #footer {
-  height: 250px;
   background: #000;
 }
 
